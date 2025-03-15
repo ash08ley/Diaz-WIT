@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <p>Casio</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Product.html" class="nav-link">Product</a>
+                    <div class="active-dot"></div>
+                </li>
+                <li><a href="Features.html" class="nav-link active">Features</a>
+                    <div class="active-dot"></div>
+                </li>
+                <li><a href="Pricing.html" class="nav-link">Pricing</a>
+                    <div class="active-dot"></div>
+                </li>
+            </ul>
+        </nav>
+        <div class="right-side">
+            <div class="search-bar">
+                <input type="search" placeholder="Search for furniture...">
+                <span class="cart-icon">🛒</span>
+            </div>
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </div>
+    </header>
+    <script>
+          
+        const links = document.querySelectorAll('nav ul li a');
+        
+        links.forEach(link => {
+          link.addEventListener('click', (e) => {
+            links.forEach(l => l.classList.remove('active'));
+            e.target.classList.add('active');
+          });
+        });
+      </script>
+      
+    <main>
+        <div class="about-content">
+          <div class="about-image">
+              <img src="c:\Users\IT-PC1\Downloads\shopping (5).webp" alt="Casio">
+          </div>
+          <div class="about-text">
+        <h3>What is a Casio watch known for?</h3>
+        <p>Today, Casio is most commonly known for making durable</p>
+        <p>and reliable electronic products. The G-Shock range of shock-resistant</p>
+        <p> watches is also very popular, with the original 1983 G-Shock </p>
+        <p>DW-5000C being highly sought-after by collectors.</p>
+        
+</body>
+</html>

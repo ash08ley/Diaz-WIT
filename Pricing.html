@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <p>Casio</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Product.html" class="nav-link">Product</a>
+                    <div class="active-dot"></div>
+                </li>
+                <li><a href="Features.html" class="nav-link">Features</a>
+                    <div class="active-dot"></div>
+                </li>
+                <li><a href="Pricing.html" class="nav-link">Pricing</a>
+                    <div class="active-dot"></div>
+                </li>
+            </ul>
+        </nav>
+        <div class="right-side">
+            <div class="search-bar">
+                <input type="search" placeholder="Search for furniture...">
+                <span class="cart-icon">🛒</span>
+        </div>
+    </header>
+    <script>
+          
+        const links = document.querySelectorAll('nav ul li a');
+        
+        links.forEach(link => {
+          link.addEventListener('click', (e) => {
+            links.forEach(l => l.classList.remove('active'));
+            e.target.classList.add('active');
+          });
+        });
+      </script>
+    <main">
+        <h1>CASIO <strong>EXCLUSIVE PRODUCTS</strong></h1>
+        <div class="product-grid">
+            <div class="product-card">
+                <h2>Casio Unisex Black Quartz</h2>
+                <p>Digital Stainless Stell Watch.</p>
+                <img src="c:\Users\IT-PC1\Downloads\shopping (5).webp" alt="Casio">
+                <p>Price: ₱ 732.00</p>
+                <button><a href="#">Buy Now</a></button>
+            </div>
+            <div class="product-card">
+                <h2>Casio AE-1200HWD-1AVDF</h2>
+                <p>Silver Stainless Watch for Men.</p>
+                <img src="c:\Users\IT-PC1\Downloads\shopping.webp" alt="Casio">
+                <p>Price: ₱ 2,799.00</p>
+                <button><a href="#">Buy Now</a></button>
+            </div>
+            <div class="product-card">
+                <h2>Casio Mpt-1302pd-1a1 Watch</h2>
+                <p>Silver.</p>
+                <img src="c:\Users\IT-PC1\Downloads\shopping (1).webp" alt="Casio">
+                <p>Price: ₱ 2,241.00</p>
+                <button><a href="#">Buy Now</a></button>
+            </div>
+            <div class="product-card">
+                <h2>Casio Vintage Unisex Watch</h2>
+                <p>#F-91W-3SDG.</p>
+                <img src="c:\Users\IT-PC1\Downloads\shopping (2).webp" alt="Casio">
+                <p>Price: ₱ 1,088.00</p>
+                <button><a href="#">Buy Now</a></button>
+            </div>
+        
+    </main>
+    <footer>
+        <div class="social-media-icons">
+            <a href="#" class="social-icon facebook">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-icon instagram">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-icon twitter">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-icon google">
+                <i class="fa fa-google" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-icon youtube">
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Designed by <strong>Casio</strong></p>
+        </div>
+    </footer>
+</body>
+</html>
